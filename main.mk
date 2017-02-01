@@ -161,6 +161,10 @@ PRODUCT_PACKAGES += libbthost_if
 # Substratum
 PRODUCT_PACKAGES += ThemeInterfacer
 
+# Magisk 
+PRODUCT_PACKAGES += MagiskManager
+PRODUCT_COPY_FILES += vendor/pa/prebuilt/zip/magisk.zip:system/addon.d/magisk.zip
+
 # Include vendor SEPolicy changes
 include vendor/pa/sepolicy/sepolicy.mk
 
