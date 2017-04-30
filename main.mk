@@ -165,6 +165,13 @@ PRODUCT_PACKAGES += ThemeInterfacer
 PRODUCT_PACKAGES += MagiskManager
 PRODUCT_COPY_FILES += vendor/pa/prebuilt/zip/magisk.zip:system/addon.d/magisk.zip
 
+# MusicFX
+ifneq ($(TARGET_NO_DSPMANAGER), true)
+PRODUCT_PACKAGES += \
+    libcyanogen-dsp \
+    audio_effects.conf
+endif
+
 # Include vendor SEPolicy changes
 include vendor/pa/sepolicy/sepolicy.mk
 
