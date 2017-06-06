@@ -16,20 +16,4 @@
 # CAF
     PRODUCT_MAKEFILES += \
     $(LOCAL_DIR)/bacon/pa_bacon.mk \
-    $(LOCAL_DIR)/gemini/pa_gemini.mk \
-    $(LOCAL_DIR)/oneplus2/pa_oneplus2.mk \
     $(LOCAL_DIR)/oneplus3/pa_oneplus3.mk \
-    $(LOCAL_DIR)/onyx/pa_onyx.mk \
-    $(LOCAL_DIR)/robin/pa_robin.mk
-
-# Samsung Exynos family
-    PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/gts210ltexx/pa_gts210ltexx.mk \
-    $(LOCAL_DIR)/gts210wifi/pa_gts210wifi.mk
-
-# AOSP
-    PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/angler/pa_angler.mk \
-    $(LOCAL_DIR)/bullhead/pa_bullhead.mk \
-    $(LOCAL_DIR)/marlin/pa_marlin.mk \
-    $(LOCAL_DIR)/sailfish/pa_sailfish.mk
