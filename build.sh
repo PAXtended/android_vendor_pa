@@ -144,11 +144,7 @@ echo -e ""
 # Lunch-time!
 echo -e "${CLR_BLD_BLU}Lunching $DEVICE${CLR_RST} ${CLR_CYA}(Including dependencies sync)${CLR_RST}"
 echo -e ""
-if [ "$FLAG_USER_BUILD" = 'y' ]; then
-        lunch "pa_$DEVICE-user"
-else
-        lunch "pa_$DEVICE-userdebug"
-fi
+lunch "pa_$DEVICE-userdebug"
 echo -e ""
 
 # Build away!
